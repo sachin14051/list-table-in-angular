@@ -7,7 +7,7 @@ import { ListsComponent } from './shared/components/lists/lists.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListsComponent
+    ListsComponent,
   ],
   imports: [
     BrowserModule

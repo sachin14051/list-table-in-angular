@@ -1,1 +1,31 @@
-<p>lists works!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let s of skills">
+     i love {{s}}
+    </li>
+</ul>
+
+<hr>
+<h2 class="bg-success text-black p-3 text-white">creating table using ng</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>sr no</th>
+            <th>fname</th>
+            <th>lname</th>
+            <th>email</th>
+            <th>contact</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr *ngFor="let per of person ; let i = index" >
+            <td>{{i + 1}}</td>
+            <td>{{per.fname}}</td>
+            <td>{{per.lname}}</td>
+            <td>{{per.email}}</td>
+            <td>{{per.contact}}</td>
+
+        </tr>
+    </tbody>
+</table>
